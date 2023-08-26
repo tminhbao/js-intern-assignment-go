@@ -8,7 +8,7 @@ const CardProduct = () => {
     return (
         <div className='card row overflow-auto mx-auto shadow p-3 mb-5' style={{ height: '580px' }}>
             <div className="card-body p-0" style={{ width: '290px' }} >
-                <div className='position-fixed ' style={{
+                <div className='sticky-top' style={{
                     zIndex: 100,
                 }}>
                     <div className='pb-1'>
