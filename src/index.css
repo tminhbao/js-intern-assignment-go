@@ -23,7 +23,7 @@
 }
 
 .card-content {
-  margin-top: 80px;
+  margin-top: -20px;
 }
 
 .card-circle {
@@ -111,6 +111,11 @@
 .cart-wrapper {
   margin: 0;
 }
+
+/* .cart-sticky {
+  position: sticky;
+  top: 0;
+} */
 
 /* RESPONSIVE  */
 @media (min-width: 320px) {

@@ -8,7 +8,7 @@ const CardCart = () => {
     return (
         <div className='card row overflow-auto mx-auto shadow p-3 mb-5' >
             <div className="card-body p-0">
-                <div className='position-sticky' style={{ zIndex: 10 }}>
+                <div className='sticky-top cart-sticky' style={{ zIndex: 10 }}>
                     <div className='pb-1'>
                         <img src={logo} className='card-logo' alt='card-logo' />
                     </div>
