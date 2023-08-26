@@ -8,17 +8,10 @@ function App() {
         justifyContent: 'center',
         textColor: 'orange'
       }}>
-        {/* <div className="col-lg-4 col-md-6 col-12 pt-3" style={{ backgroundColor: 'steelblue' }}>
+        <div className="col-lg-5 col-xl-4 col-xxl-4 col-md-6 col-12 pt-3 card-product-wrapper">
           <CardProduct />
         </div>
-        <div className="col-lg-4 col-md-6 col-12 pt-3 cart-wrapper" style={{ backgroundColor: 'navajowhite' }}>
-          <CardCart />
-        </div> */}
-
-        <div className="col-lg-5 col-xl-4 col-xxl-4 col-md-6 col-12 pt-3 card-product-wrapper" >
-          <CardProduct />
-        </div>
-        <div className="col-lg-5 col-xl-4 col-xxl-4 col-md-6 col-12 pt-3 cart-wrapper" >
+        <div className="col-lg-5 col-xl-4 col-xxl-4 col-md-6 col-12 pt-3 cart-wrapper">
           <CardCart />
         </div>
       </div>

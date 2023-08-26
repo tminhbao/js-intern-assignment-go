@@ -1,6 +1,15 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { addProductToCart } from '../../../redux/reducers/cartReducer';
+import checkIcon from '../../../assets/check.png'
 
 const ProductItem = ({ shoe }) => {
+    const dispatch = useDispatch();
+    const handleAddProduct = () => {
+        dispatch(addProductToCart(shoe))
+    }
+    const { listCarts } = useSelector((state) => state.cartReducer);
+    const itemInCart = listCarts.find(item => item.id === shoe?.id);
     return (
         <div className='product-item mx-1'>
             <div style={{ backgroundColor: `${shoe?.color}` }} className='product-img-wrapper overflow-hidden'>
@@ -13,7 +22,10 @@ const ProductItem = ({ shoe }) => {
             </p>
             <div className='d-flex justify-content-between align-items-center'>
                 <h5 className='fw-bold mb-0'>${shoe?.price}</h5>
-                <button className='add-to-cart-btn'>Add to cart</button>
+                {itemInCart ? <button className='check-btn'>
+                    <img src={checkIcon} alt='check-icon' className='w-75 animate__animated animate__fadeInRight' />
+                </button> : <button className='add-to-cart-btn' onClick={handleAddProduct}>Add to cart</button>}
+
             </div>
         </div >
     )
