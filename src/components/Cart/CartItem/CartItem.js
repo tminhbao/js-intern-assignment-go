@@ -24,7 +24,7 @@ const CartItem = ({ item }) => {
                 </div>
             </div>
             <div className='col-lg-8 col-md-8 col-sm-8 cart-item-right'>
-                <p className='title fw-bold mb-0' style={{ fontSize: '13px' }}>{item?.name}</p>
+                <p className='cart-item-right-title fw-bold mb-0'>{item?.name}</p>
                 <p className='fw-bold my-1'>${item?.price}</p>
                 <div className='d-flex justify-content-between align-items-center'>
                     <div>

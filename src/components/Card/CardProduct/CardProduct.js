@@ -6,20 +6,17 @@ import shoes from "../../../data/shoes.json"
 const CardProduct = () => {
 
     return (
-        <div className='card row overflow-auto mx-auto shadow p-3 mb-5' style={{ height: '580px' }}>
-            <div className="card-body p-0" style={{ width: '290px' }} >
-                <div className='sticky-top' style={{
-                    zIndex: 100,
-                }}>
+        <div className='card row overflow-auto mx-auto shadow p-3 mb-5'>
+            <div className="card-body p-0 cart-title-price" >
+                <div className='sticky-top card-header'>
                     <div className='pb-1'>
                         <img src={logo} className='card-logo' alt='card-logo' />
                     </div>
                     <h3 className="card-title fw-bold">Our products</h3>
                 </div>
-                <div className='card-content' style={{ zIndex: 10 }}>
+                <div className='card-content'>
                     {shoes.shoes.map(shoe => <ProductItem shoe={shoe} key={shoe?.id} />)}
                 </div>
-
             </div>
         </div >
     )

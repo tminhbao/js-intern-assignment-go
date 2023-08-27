@@ -8,10 +8,6 @@
   display: none;
 }
 
-.container {
-  /* padding: 0 248px; */
-}
-
 .card {
   width: 348px;
   height: 580px;
@@ -49,7 +45,7 @@
 
 .product-img-wrapper {
   border-radius: 28px;
-  height: 370px;
+  height: 372px;
 }
 
 .product-img {
@@ -112,22 +108,19 @@
   margin: 0;
 }
 
-/* .cart-sticky {
-  position: sticky;
-  top: 0;
-} */
+.card-header {
+  padding: 2px 4px;
+  border-radius: 28px !important;
+  background-color: #f6c90e;
+}
+
+.cart-item-right-title {
+  font-size: 13px;
+}
 
 /* RESPONSIVE  */
 @media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  .container {
-    padding: 0;
-    background-color: gray;
-  }
-
   .card {
-    /* width: 340px;
-    height: 520px; */
     padding: 12px 28px !important;
   }
 
@@ -148,12 +141,6 @@
   }
 }
 @media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-  .container {
-    padding: 0;
-    background-color: green;
-  }
-
   .cart-item-left {
     width: 90px !important;
   }
@@ -162,26 +149,8 @@
     width: 190px !important;
   }
 }
-@media (min-width: 576px) {
-  /* smartphones, Android phones, landscape iPhone */
-  .container {
-    padding: 0;
-    background-color: lime;
-  }
-}
-
-@media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  .container {
-    padding: 0;
-    background-color: orange;
-  }
-}
 
 @media (min-width: 768px) {
-  .container {
-    background-color: cornflowerblue;
-  }
   .card-product-wrapper {
     padding-left: 3px;
   }
@@ -192,21 +161,7 @@
   }
 }
 
-@media (min-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .container {
-    /* padding: 0 90px; */
-    background-color: pink;
-  }
-}
-
 @media (min-width: 992px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .container {
-    /* padding: 0 90px; */
-    background-color: cyan;
-  }
-
   .card-product-wrapper {
     padding-left: 37px;
   }
@@ -216,21 +171,8 @@
     margin-top: 0px;
   }
 }
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-  .container {
-    /* padding: 0 120px; */
-    background-color: red;
-  }
-}
 
 @media (min-width: 1200px) {
-  /* big landscape tablets, laptops, and desktops */
-  .container {
-    /* padding: 0 120px; */
-    background-color: ivory;
-  }
-
   .card-product-wrapper {
     padding-left: 16px;
   }
@@ -240,21 +182,8 @@
     margin-top: 0px;
   }
 }
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
-  .container {
-    /* padding: 0 280px; */
-    background-color: yellow;
-  }
-}
 
 @media (min-width: 1400px) {
-  /* hi-res laptops and desktops */
-  .container {
-    /* padding: 0 280px; */
-    background-color: steelblue;
-  }
-
   .card-product-wrapper {
     padding-left: 76px;
   }
