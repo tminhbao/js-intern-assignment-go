@@ -17,7 +17,7 @@ const CardCart = () => {
                         <h3>${totalMoney === 0 ? `0.00` : totalMoney}</h3>
                     </div>
                 </div>
-                <div className='card-content'>
+                <div className='card-content-cart'>
                     {listCarts.length > 0 ? listCarts.map(item => <CartItem item={item} key={item?.id} />) : <p className='mt-4'>Your cart is empty</p>}
                 </div>
             </div>

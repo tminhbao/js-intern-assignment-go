@@ -11,7 +11,7 @@ const ProductItem = ({ shoe }) => {
     const { listCarts } = useSelector((state) => state.cartReducer);
     const itemInCart = listCarts.find(item => item.id === shoe?.id);
     return (
-        <div className='product-item mx-1 my-4'>
+        <div className='product-item mx-1'>
             <div style={{ backgroundColor: `${shoe?.color}` }} className='product-img-wrapper overflow-hidden'>
                 <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png' alt='product-img'
                     className='w-100 product-img' />
