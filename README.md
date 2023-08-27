@@ -4,7 +4,7 @@
 
 The project utilizes the following technologies:
 
-- [Yarn](https://yarnpkg.com/): Package manager for managing dependencies.
+- [Npm](https://www.npmjs.com/): Package manager for managing dependencies.
 - [Bootstrap](https://getbootstrap.com/): The most popular CSS Framework for developing responsive and mobile-first websites
 - [Redux Toolkit](https://redux-toolkit.js.org/):  A set of tools that helps simplify Redux development
 
